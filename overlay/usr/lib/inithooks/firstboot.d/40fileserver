@@ -1,8 +1,0 @@
-#!/bin/bash -e
-# set fileserver extplorer admin and guest passwords
-
-. /etc/default/inithooks
-
-[ -e $INITHOOKS_CONF ] && . $INITHOOKS_CONF
-$INITHOOKS_PATH/bin/fileserver.py --pass="$APP_PASS"
-
