@@ -1,0 +1,77 @@
+turnkey-fileserver-11.1 (1) turnkey; urgency=low
+
+  * Set eXtplorer admin and guest password on firstboot (convenience, security).
+
+  * Major component versions:
+
+    samba           2:3.4.7~dfsg-1ubuntu3.2
+    extplorer       2.0.1 (upstream zipfile)
+    vsftpd          2.2.2-3ubuntu6
+    lighttpd        1.4.26-1.1ubuntu3
+
+  * Note: Please refer to turnkey-core's changelog for changes common to all
+    appliances. Here we only describe changes specific to this appliance.
+
+ -- Alon Swartz <alon@turnkeylinux.org>  Sun, 19 Dec 2010 15:01:05 +0200
+
+turnkey-fileserver-2009.10 (2) hardy; urgency=low
+
+  * Installed all security updates (see manifest for package versions).
+
+  * Install security updates on firstboot (except when running live).
+
+  * Trick webmin into not checking for upgrades (managed by apt).
+
+  * Included latest version of inithooks and updated scripts.
+
+  * Included wget as per common request.
+
+ -- Alon Swartz <alon@turnkeylinux.org>  Mon, 29 Mar 2010 09:02:11 +0200
+
+turnkey-fileserver-2009.10 (1) hardy; urgency=low
+
+  * Initial public release of TurnKey File Server.
+
+  * SSL support out of the box.
+
+  * File Server configurations:
+
+    - Preconfigured workgroup: WORKGROUP
+    - Preconfigured netbios name: FILESERVER
+
+    - Configured samba user accounts to synchronize with UNIX user accounts.
+    - Configured root as administrative Samba user.
+
+    - Configured shares:
+        
+        - Users home directory.
+        - Public storage.
+        - CD-ROM with automount and umount hooks (/media/cdrom).
+
+  * eXtplorer configuration:
+
+    - Provides web interface to file server.
+    - Preconfigured admin and guest users.
+
+    - Includes vsftpd binded to localhost to provide net2ftp backend:
+
+        - Provide users access to their home directories.
+        - Workarounds permission issues with eXtplorer.
+
+    - Includes flip to convert text file endings between UNIX and DOS formats.
+    - Includes popular compression support (zip, rar, bz2).
+    - Enabled multiverse Ubuntu repository so rar/unrar can be updated.
+
+  * Regenerates all secrets during installation / firstboot (security).
+
+  * Major component versions:
+
+    samba           3.0.28a-1ubuntu4.8
+    extplorer       2.0.1 (upstream zipfile)
+    vsftpd          2.0.6-1ubuntu1.1
+    lighttpd        1.4.19-0ubuntu3.1
+
+  * Note: Please refer to turnkey-core's changelog for changes common to all
+    appliances. Here we only describe changes specific to this appliance.
+
+ -- Alon Swartz <alon@turnkeylinux.org>  Tue, 29 Sep 2009 15:39:41 +0200
