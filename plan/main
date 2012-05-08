@@ -1,5 +1,5 @@
 #include <turnkey/base>
 #include <turnkey/samba>
-#include <turnkey/extplorer>
+#include <turnkey/ajaxplorer>
 #include <turnkey/compression>
 
