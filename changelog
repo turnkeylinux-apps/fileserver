@@ -1,3 +1,39 @@
+turnkey-fileserver-12.0 (1) turnkey; urgency=low
+
+  * Transitioned from eXtplorer to AjaXplorer (web based filemanager)
+
+    - Pre-configured multi-authentication (Local and Samba).
+    - Pre-configured repositories (storage, user home directory).
+    - Set local admin password on firstboot.
+
+  * Configured automatic unix/smb user/group synchronization in Webmin.
+
+  * Major component versions
+
+    ajaxplorer      4.0.4 (upstream archive)
+    samba           2:3.5.6~dfsg-3squeeze8
+    lighttpd        1.4.28-2+squeeze1
+
+  * Note: Please refer to turnkey-core's changelog for changes common to all
+    appliances. Here we only describe changes specific to this appliance.
+
+ -- Alon Swartz <alon@turnkeylinux.org>  Wed, 01 Aug 2012 08:00:00 +0200
+
+turnkey-fileserver-11.3 (1) turnkey; urgency=low
+
+  * Installed security updates.
+  * Enabled etckeeper garbage collection by default.
+  * Upgraded to latest inithooks version (adhoc re-initialization via turnkey-init)
+
+ -- Alon Swartz <alon@turnkeylinux.org>  Mon, 05 Dec 2011 10:48:44 +0000
+
+turnkey-fileserver-11.2 (1) turnkey; urgency=low
+
+  * Installed security updates.
+  * Added HubDNS package and firstboot configuration.
+
+ -- Alon Swartz <alon@turnkeylinux.org>  Fri, 15 Jul 2011 07:47:08 +0000
+
 turnkey-fileserver-11.1 (1) turnkey; urgency=low
 
   * Set eXtplorer admin and guest password on firstboot (convenience, security).
