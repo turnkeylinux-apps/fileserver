@@ -1,3 +1,21 @@
+turnkey-fileserver-12.1 (1) turnkey; urgency=low
+
+  * AjaXplorer related:
+
+    - Upgraded to latest version.
+    - Removed smb-root-write-fix patch (included in new version).
+    - Added USER_BASE_DRIVER to plugins multi-auth (required in new version).
+    - Force SSL and set locale to en_US.UTF-8.
+
+  * Hardcoded component versions:
+
+    ajaxplorer      4.2.3
+
+  * Note: Please refer to turnkey-core's changelog for changes common to all
+    appliances. Here we only describe changes specific to this appliance.
+
+ -- Alon Swartz <alon@turnkeylinux.org>  Sun, 07 Apr 2013 08:00:00 +0200
+
 turnkey-fileserver-12.0 (1) turnkey; urgency=low
 
   * Transitioned from eXtplorer to AjaXplorer (web based filemanager)
