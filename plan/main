@@ -1,5 +1,7 @@
 #include <turnkey/base>
 #include <turnkey/samba>
-#include <turnkey/ajaxplorer>
+#include <turnkey/samba-dav>
 #include <turnkey/compression>
+#include <turnkey/nfs>
 
+php5-ssh2

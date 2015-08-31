@@ -1,3 +1,16 @@
+turnkey-fileserver-14.0 (1) turnkey; urgency=low
+
+  * Latest Debian Jessie package version of Samba.
+
+  * Changed from Pydio (AjaXplorer) to SambaDAV as web front-end.
+
+  * Now supports NFS, WebDAV access.
+
+  * Note: Please refer to turnkey-core's changelog for changes common to all
+    appliances. Here we only describe changes specific to this appliance.
+
+ -- Anton Pyrogovskyi <q@dae.pp.ua>  Wed, 29 Jul 2015 23:11:30 +0300
+
 turnkey-fileserver-13.0 (1) turnkey; urgency=low
 
   * Latest Debian Wheezy package version of Samba.
