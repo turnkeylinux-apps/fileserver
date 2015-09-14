@@ -51,6 +51,6 @@ Credentials *(passwords set at first boot)*
    - username **root** (or Samba users)
 
 
-.. _TurnKey Core: http://www.turnkeylinux.org/core
+.. _TurnKey Core: https://www.turnkeylinux.org/core
 .. _Samba: http://www.samba.org/samba/what_is_samba.html
 .. _SambaDAV: https://github.com/1afa/sambadav
