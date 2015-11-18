@@ -60,7 +60,7 @@
                            Samba documentation</a>
                         </li>
                         <li>
-                          <a href="http://www.turnkeylinux.org/fileserver">
+                          <a href="https://www.turnkeylinux.org/fileserver">
                           TurnKey File Server release notes</a>
                         </li>
                     </ul>
