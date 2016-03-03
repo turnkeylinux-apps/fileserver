@@ -1,0 +1,5 @@
+#!/bin/bash -ex
+
+a2dissite 000-default
+a2ensite tkl-webcp
+a2ensite webdavcgi
