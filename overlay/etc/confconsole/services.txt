@@ -1,4 +1,4 @@
-SambaDAV/WebDAV: https://$ipaddr
+WebDAV (CGI):    https://$ipaddr
 Web shell:       https://$ipaddr:12320
 Webmin:          https://$ipaddr:12321
 SMB/CIFS:        \\$ipaddr (ports 139/445)
