@@ -1,3 +1,17 @@
+turnkey-fileserver-14.2 (1) turnkey; urgency=low
+
+  * WebDAV CGI supersedes SambaDAV (#563).
+
+  * Recycle bin is enabled by default in all shares (#468).
+
+  * Logging into the web interface uses the same user database as Samba
+    (#449).
+
+  * Note: Please refer to turnkey-core's changelog for changes common to all
+    appliances. Here we only describe changes specific to this appliance.
+
+ -- Anton Pyrogovskyi <anton@turnkeylinux.org>  Sun, 6 Mar 2016 08:59:14 +0100
+
 turnkey-fileserver-14.1 (1) turnkey; urgency=low
 
   * Admin Samba account now works reliably with sudoadmin (#523).
