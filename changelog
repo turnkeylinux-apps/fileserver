@@ -1,3 +1,14 @@
+turnkey-fileserver-15.0 (1) turnkey; urgency=low
+
+  * Install Adminer directly from stretch/main repo
+
+  * Replace MySQL with MariaDB
+
+  * Note: Please refer to turnkey-core's changelog for changes common to all
+    appliances. Here we only describe changes specdific to this appliance.
+
+ -- Vlad Kuzmenko <vlad.work.here@gmail.com>  Fri, 24 Feb 2018 04:36:42 +0200
+
 turnkey-fileserver-14.2 (1) turnkey; urgency=low
 
   * WebDAV CGI supersedes SambaDAV (#563).
