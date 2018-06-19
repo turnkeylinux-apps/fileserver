@@ -15,7 +15,7 @@ and on top of that:
 - Includes popular compression support (zip, rar, bz2).
 - Includes flip to convert text file endings between UNIX and DOS
   formats.
-- `WebDAV GCI`_ providing WebUI and WebDAV access.
+- `WebDAV CGI`_ providing WebUI and WebDAV access.
 - File server (`Samba`_) configurations:
    
    - Preconfigured wordgroup: WORKGROUP
@@ -29,7 +29,7 @@ and on top of that:
       - Public storage.
       - CD-ROM with automount and umount hooks (/media/cdrom).
 
-- Access your files securely from anywhere via `WebDAV GCI`_:
+- Access your files securely from anywhere via `WebDAV CGI`_:
    
    - web GUI access to your files, with online previews of major formats and drag-n-drop
      support.
@@ -46,7 +46,7 @@ Credentials *(passwords set at first boot)*
 -------------------------------------------
 
 -  Webmin, Webshell, SSH, Samba: username **root**
--  Web based file manager (SambaDAV):
+-  Web based file manager (WebDAV CGI):
    
    - username **root** (or Samba users)
 
