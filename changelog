@@ -3,7 +3,7 @@ turnkey-fileserver-15.0 (1) turnkey; urgency=low
   * Update WebDAV CGI from upstream.
 
   * Note: Please refer to turnkey-core's changelog for changes common to all
-    appliances. Here we only describe changes specdific to this appliance.
+    appliances. Here we only describe changes specific to this appliance.
 
  -- Vlad Kuzmenko <vlad.work.here@gmail.com>  Tue, 19 Jun 2018 04:36:42 +0200
 
