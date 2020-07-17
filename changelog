@@ -1,7 +1,16 @@
 turnkey-fileserver-16.0 (1) turnkey; urgency=low
 
-  * Update WebDAV CGI from upstream.
+  * Update WebDAV CGI from upstream (git master branch).
     [ Jeremy Davis ]
+
+  * Explcitly disable TLS<1.2 (i.e. SSLv3, TLSv1, TLSv1.1) for WebDAV CGI.
+    (v15.x TurnKey releases supported TLS 1.2, but could fallback as low as
+    TLSv1).
+
+  * Update SSL/TLS cyphers to provide "Intermediate" browser/client support
+    (suitable for "General-purpose servers with a variety of clients,
+    recommended for almost all systems"). As provided by Mozilla via
+    https://ssl-config.mozilla.org/. (Only applies to WebDAV CGI).
 
   * Note: Please refer to turnkey-core's changelog for changes common to all
     appliances. Here we only describe changes specific to this appliance.
