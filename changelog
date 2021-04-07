@@ -1,3 +1,15 @@
+turnkey-fileserver-16.1 (1) turnkey; urgency=low
+
+  * Resolve bug in fileserver firstboot inithook - closes #1596.
+
+  * Include 'webmin-exports' package (Webmin NFS exports module) - closes
+    #1521.
+
+  * Note: Please refer to turnkey-core's 16.1 changelog for changes common to all
+    appliances. Here we only describe changes specific to this appliance.
+
+ -- Jeremy Davis <jeremy@turnkeylinux.org>  Wed, 07 Apr 2021 10:23:32 +1000
+
 turnkey-fileserver-16.0 (1) turnkey; urgency=low
 
   * Update WebDAV CGI from upstream (git master branch).
