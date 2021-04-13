@@ -1,3 +1,19 @@
+turnkey-fileserver-16.1 (1) turnkey; urgency=low
+
+  * Build custom upstream (WebDAV-CGI) libfilesys-smbclient perl module from
+    source - closes #1597.
+    [ Dan Rhode <d.rohde@cms.hu-berlin.de> ]
+
+  * Resolve bug in fileserver firstboot inithook - closes #1596.
+
+  * Include 'webmin-exports' package (Webmin NFS exports module) - closes
+    #1521.
+
+  * Note: Please refer to turnkey-core's 16.1 changelog for changes common to all
+    appliances. Here we only describe changes specific to this appliance.
+
+ -- Jeremy Davis <jeremy@turnkeylinux.org>  Tue, 13 Apr 2021 08:03:44 +1000
+
 turnkey-fileserver-16.0 (1) turnkey; urgency=low
 
   * Update WebDAV CGI from upstream (git master branch).
