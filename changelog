@@ -1,3 +1,12 @@
+turnkey-fileserver-17.0 (1) turnkey; urgency=low
+
+  * Add "Logout" button to the WebDAV interface.
+
+  * Note: Please refer to turnkey-core's 17.0 changelog for changes common to all
+    appliances. Here we only describe changes specific to this appliance.
+
+ -- Zhenya Hvorostian <zhenya@turnkeylinux.org>  Thu, 17 Feb 2022 17:52:33 +0300
+
 turnkey-fileserver-16.1 (1) turnkey; urgency=low
 
   * Build custom upstream (WebDAV-CGI) libfilesys-smbclient perl module from
