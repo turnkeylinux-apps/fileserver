@@ -1,3 +1,13 @@
+turnkey-fileserver-17.1 (1) turnkey; urgency=low
+
+  * Updated all Debian packages to latest.
+    [ autopatched by buildtasks ]
+
+  * Patched bugfix release. Closes #1734.
+    [ autopatched by buildtasks ]
+
+ -- Jeremy Davis <jeremy@turnkeylinux.org>  Wed, 14 Sep 2022 07:01:09 +0000
+
 turnkey-fileserver-17.0 (1) turnkey; urgency=low
 
   * Add "Logout" button to the WebDAV interface.
