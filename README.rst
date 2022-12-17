@@ -5,7 +5,7 @@ An easy to use file server that combines Windows-compatible network file
 sharing with a web based file manager. TurnKey File Server includes 
 support for SMB, SFTP, NFS, WebDAV and rsync file transfer protocols. 
 The server is configured to allow server users to manage files in private 
-or public storage. Based on Samba and SambaDAV.
+or public storage. Based on Samba and WebDAV CGI.
 
 This appliance includes all the standard features in `TurnKey Core`_,
 and on top of that:
