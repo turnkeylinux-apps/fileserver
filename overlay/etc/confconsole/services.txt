@@ -2,4 +2,5 @@ WebDAV (CGI):    https://$ipaddr
 Web shell:       https://$ipaddr:12320
 Webmin:          https://$ipaddr:12321
 SMB/CIFS:        \\$ipaddr (ports 139/445)
+FTP/FTPS:        root@$ipaddr (port 21)
 SSH/SFTP:        root@$ipaddr (port 22)
