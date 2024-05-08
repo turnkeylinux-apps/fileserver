@@ -4,6 +4,7 @@ WEBMIN_FW_UDP_INCOMING = 137 138
 NONFREE = yes
 
 CREDIT_ANCHORTEXT = File Server Appliance
+COMMON_CONF += ftp
 
 include $(FAB_PATH)/common/mk/turnkey/fileserver.mk
 include $(FAB_PATH)/common/mk/turnkey.mk
