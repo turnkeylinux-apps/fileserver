@@ -3,7 +3,7 @@ File Server - Simple Network Attached Storage
 
 An easy to use file server that combines Windows-compatible network file
 sharing with a web based file manager. TurnKey File Server includes 
-support for SMB, FTP, SFTP, NFS, WebDAV and rsync file transfer protocols. 
+support for SMB, FTP, SFTP, NFS, WebDAV and rsync file transfer protocols.
 The server is configured to allow server users to manage files in private 
 or public storage. Based on Samba and WebDAV CGI.
 

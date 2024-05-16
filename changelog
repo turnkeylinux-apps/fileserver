@@ -1,3 +1,87 @@
+turnkey-fileserver-18.0 (1) turnkey; urgency=low
+
+  * Add support for FTPS.
+    [Anand Phulwani <https://github.com/anandphulwani>]
+
+  * Confconsole: bugfix broken DNS-01 Let's Encrypt challenge- closes #1876 &
+    #1895.
+    [Jeremy Davis <jeremy@turnkeylinux.org>]
+
+  * Ensure hashfile includes URL to public key - closes #1864.
+
+  * Include webmin-logviewer module by default - closes #1866.
+
+  * Upgraded base distribution to Debian 12.x/Bookworm.
+
+  * Configuration console (confconsole):
+    - Support for DNS-01 Let's Encrypt challenges.
+      [ Oleh Dmytrychenko <dmytrychenko.oleh@gmail.com> github: @NitrogenUA ]
+    - Support for getting Let's Encrypt cert via IPv6 - closes #1785.
+    - Refactor network interface code to ensure that it works as expected and
+      supports more possible network config (e.g. hotplug interfaces & wifi).
+    - Show error message rather than stacktrace when window resized to
+      incompatable resolution - closes  #1609.
+      [ Stefan Davis <stefan@turnkeylinux.org> ]
+    - Bugfix exception when quitting configuration of mail relay.
+      [ Oleh Dmytrychenko <dmytrychenko.oleh@gmail.com> github: @NitrogenUA ]
+    - Improve code quality: implement typing, fstrings and make (mostly) PEP8
+      compliant.
+      [Stefan Davis <stefan@turnkeylinux.org> & Jeremy Davis
+
+  * Firstboot Initialization (inithooks):
+    - Refactor start up (now hooks into getty process, rather than having it's
+      own service).
+      [ Stefan Davis <stefan@turnkeylinux.org> ]
+    - Refactor firstboot.d/01ipconfig (and 09hostname) to ensure that hostname
+      is included in dhcp info when set via inithooks.
+    - Package turnkey-make-ssl-cert script (from common overlay - now packaged
+      as turnkey-ssl). Refactor relevant scripts to leverage turnkey-ssl.
+    - Refactor run script - use bashisms and general tidying.
+    - Show blacklisted password characters more nicely.
+    - Misc packaging changes/improvements.
+    - Support returning output from MySQL - i.e. support 'SELECT'. (Only
+      applies to apps that include MySQL/MariaDB).
+
+  * Web management console (webmin):
+    - Upgraded webmin to v2.105.
+    - Replace webmin-shell with webmin-xterm module by default - closes #1904.
+    - Removed stunnel reverse proxy (Webmin hosted directly now).
+    - Ensure that Webmin uses HTTPS with default cert
+      (/etc/ssl/private/cert.pem).
+    - Disabled Webmin Let's Encrypt (for now).
+
+  * Web shell (shellinabox):
+    - Completely removed in v18.0 (Webmin now has a proper interactive shell).
+    - Note: previous v18.0 releases did not include webmin-xterm pkg - see
+      above webmin note &/or #1904.
+
+  * Backup (tklbam):
+    - Ported dependencies to Debian Bookworm; otherwise unchanged.
+
+  * Security hardening & improvements:
+    - Generate and use new TurnKey Bookworm keys.
+    - Automate (and require) default pinning for packages from Debian
+      backports. Also support non-free backports.
+
+  * IPv6 support:
+    - Adminer (only on LAMP based apps) listen on IPv6.
+    - Nginx/NodeJS (NodeJS based apps only) listen on IPv6.
+
+  * Misc bugfixes & feature implementations:
+    - Remove rsyslog package (systemd journal now all that's needed).
+    - Include zstd compression support.
+    - Enable new non-free-firmware apt repo by default.
+    - Improve turnkey-artisan so that it works reliably in cron jobs (only
+      Laravel based LAMP apps).
+
+  * Set mod_evasive log location - makes debugging easier.
+    [ Jeremy Davis <jeremy@turnkeylinux.org> ]
+
+  * Include and enable mod_evasive and mod_security2 by default in Apache.
+    [ Stefan Davis <Stefan@turnkeylinux.org> ]
+
+ -- Jeremy Davis <jeremy@turnkeylinux.org>  Thu, 16 May 2024 07:29:26 +0000
+
 turnkey-fileserver-17.1 (1) turnkey; urgency=low
 
   * Updated all Debian packages to latest.
