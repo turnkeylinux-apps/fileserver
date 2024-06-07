@@ -1,6 +1,3 @@
 #include <turnkey/base>
-#include <turnkey/samba>
-#include <turnkey/samba-dav>
-#include <turnkey/compression>
-#include <turnkey/nfs>
+#include <turnkey/fileserver>
 #include <turnkey/ftp>

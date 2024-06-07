@@ -56,7 +56,7 @@ Content-Type: text/html; charset=utf-8
                     <h2>Resources and references</h2>
                     <ul>
                         <li>
-                           <a href="http://samba.org/samba/docs">
+                           <a href="https://www.samba.org/samba/docs/">
                            Samba documentation</a>
                         </li>
                         <li>
