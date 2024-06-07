@@ -1,5 +1,10 @@
 turnkey-fileserver-18.0 (1) turnkey; urgency=low
 
+  * Add wsdd package for Windows Service for Devices - so Fileserver shows up
+    in Win10/11 Explorer - closes #1598.
+
+  * Add Avahi Daemon package. Required for Ubuntu & Mac OSX discovery.
+
   * Add support for FTPS.
     [Anand Phulwani <https://github.com/anandphulwani>]
 
@@ -80,7 +85,7 @@ turnkey-fileserver-18.0 (1) turnkey; urgency=low
   * Include and enable mod_evasive and mod_security2 by default in Apache.
     [ Stefan Davis <Stefan@turnkeylinux.org> ]
 
- -- Jeremy Davis <jeremy@turnkeylinux.org>  Thu, 16 May 2024 07:29:26 +0000
+ -- Jeremy Davis <jeremy@turnkeylinux.org>  Tue, 04 Jun 2024 06:10:00 +0000
 
 turnkey-fileserver-17.1 (1) turnkey; urgency=low
 
