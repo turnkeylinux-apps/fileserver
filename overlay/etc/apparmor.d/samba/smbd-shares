@@ -1,6 +1,0 @@
-# Bootstrap the static Fileserver share when the runtime cannot inspect the
-# host AppArmor namespace.  Debian's smbd ExecStartPre generator replaces this
-# file from smb.conf on hosts where AppArmor profiles are visible.
-
-"/srv/storage/" rk,
-"/srv/storage/**" rwkl,
