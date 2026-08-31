@@ -1,5 +1,13 @@
 #!/usr/bin/perl
 
+use strict;
+use warnings;
+
+my $http_host = $ENV{HTTP_HOST} // '';
+my ($host) = $http_host =~
+    /\A([A-Za-z0-9](?:[A-Za-z0-9.-]*[A-Za-z0-9])?|\[[0-9A-Fa-f:.]+\])(?::[0-9]{1,5})?\z/;
+$host //= 'localhost';
+
 print <<EOF;
 Content-Type: text/html; charset=utf-8
 
@@ -38,16 +46,16 @@ Content-Type: text/html; charset=utf-8
             <div id="cp">
                 <div class="fragment-content">
                     <div>
-                        <a href="https://$ENV{HTTP_HOST}:12321"><img
+                        <a href="https://$host:12321"><img
                         src="images/webmin.png"/>Webmin</a>
                     </div>
                     <div>
-                        <a href="https://$ENV{HTTP_HOST}:12321/samba/index.cgi">
+                        <a href="https://$host:12321/samba/index.cgi">
                         <img src="images/samba.png"/>Samba conf<br/>via Webmin<br/>(login first)</a>
                     </div>
 
                     <div>
-                        <a href="https://$ENV{HTTP_HOST}/"><img
+                        <a href="https://$host/"><img
                         src="images/filemanager.png"/>WebDAV CGI<br/>File Manager</a>
                     </div>
                    <div></div>
@@ -70,4 +78,3 @@ Content-Type: text/html; charset=utf-8
     </body>
 </html>
 EOF
-
