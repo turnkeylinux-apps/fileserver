@@ -1,12 +1,22 @@
 turnkey-fileserver-19.0.3 (1) turnkey; urgency=medium
 
-  * Connect app email, dynamic DNS and backup setup through the Hub helper.
-  * Include the current HubDNS and certificate setup/renewal fixes.
-  * Restore backups reliably through Webmin Restore and Advanced options.
-  * Complete backups when the Webmin progress window closes.
-  * Run backup simulations locally while preserving interrupted-backup state.
-  * Include the updated Webmin backup setup and Hub approval flow.
-  * Update TKLBAM, Hub helper and console setup/status guidance.
+  * Highlights:
+    - App email delivery: Use TurnKey Hub for application email delivery.
+    - Easier Hub connection: Connect your server more easily to set up email
+      delivery, backups and DNS.
+    - HTTPS and DNS: Fix HubDNS and Let's Encrypt certificate setup and renewal.
+    - Backups: Improve backup and restore reliability in Webmin.
+    - Samba: Reload the active service so first-boot setup can finish.
+    - Security: Include Debian security updates.
+
+  * Technical details:
+    - Connect app email, dynamic DNS and backup setup through the Hub helper.
+    - Include the current HubDNS and certificate setup/renewal fixes.
+    - Restore backups reliably through Webmin Restore and Advanced options.
+    - Complete backups when the Webmin progress window closes.
+    - Run backup simulations locally while preserving interrupted-backup state.
+    - Include the updated Webmin backup setup and Hub approval flow.
+    - Update TKLBAM, Hub helper and console setup/status guidance.
 
  -- Liraz Siri <liraz@liraz.org>  Sun, 15 Nov 2026 03:42:07 +0000
 
